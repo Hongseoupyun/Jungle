@@ -94,5 +94,11 @@ main section.categories-show {
         }
       }
     }
+    .soldout_badge{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      
+    }
   }
 }
