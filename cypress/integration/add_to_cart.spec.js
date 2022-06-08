@@ -1,4 +1,4 @@
-describe('Product_details',()=>{
+describe('Add to Cart',()=>{
   beforeEach(() => {
     // Cypress starts out with a blank slate for each test
     // so we must tell it to visit our website with the `cy.visit()` command.
@@ -16,11 +16,11 @@ describe('Product_details',()=>{
     cy.get(".products article").should("have.length", 2);
   });
 
-  it("should click the first item and navigate to the item", () => {
-    cy.get('article')
+  it("Add item to cart", () => {
+    cy.get('.btn')
     .first()
-    .click()
-    cy.contains("Scented Blade")
+    .click({force: true})
+    cy.contains("My Cart (1)")
   });
   
 })
